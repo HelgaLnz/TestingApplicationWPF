@@ -1,4 +1,5 @@
 ﻿using ProjectWPF.Core;
+using ProjectWPF.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,18 +21,35 @@ namespace ProjectWPF.View
     /// </summary>
     public partial class AuthorizationWindow : Window
     {
+        private const string Path = "users3.txt";
+
         public AuthorizationWindow() =>
             InitializeComponent();
 
         private void btSignIn_Click(object sender, RoutedEventArgs e)
         {
-            if (UserValidator.Validate(tbLogin.Text, pbPassword.Password))
+            User user = UserValidator.Validate(tbLogin.Text, pbPassword.Password, Path);
+            switch (user.Role)
             {
-                new UsersWindow().Show();
-                Close();
+                case "Admin":
+                    new UsersWindow().Show();
+                    Close();
+                    break;
+
+                case "Manager":
+                    new ManagerWindow().Show();
+                    Close();
+                    break;
+
+                case "Client":
+                    new ClientWindow().Show();
+                    Close();
+                    break;
+
+                default:
+                    MessageBox.Show("Error", "Login or password is not correct", MessageBoxButton.OK, MessageBoxImage.Error);
+                    break;
             }
-            else
-                MessageBox.Show("Error", "Login or password is not correct", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 }

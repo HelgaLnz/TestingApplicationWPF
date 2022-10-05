@@ -21,3 +21,7 @@ E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\ProjectWPF.genrunt
 E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\ref\ProjectWPF.dll
 E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\AuthorizationWindow.g.cs
 E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\AuthorizationWindow.baml
+E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\ClientWindow.g.cs
+E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\ManagerWindow.g.cs
+E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\ClientWindow.baml
+E:\Projects\C#\ProjectWPF\ProjectWPF\obj\Debug\net6.0-windows\View\ManagerWindow.baml

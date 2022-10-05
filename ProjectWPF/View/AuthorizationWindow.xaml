@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProjectWPF.View"
         mc:Ignorable="d"
-        Title="AuthorizationWindow" Height="350" Width="400">
+        Title="AuthorizationWindow" Height="350" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />

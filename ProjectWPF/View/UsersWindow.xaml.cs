@@ -1,4 +1,5 @@
-﻿using ProjectWPF.Model;
+﻿using ProjectWPF.Core;
+using ProjectWPF.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,12 +24,7 @@ namespace ProjectWPF.View
         public UsersWindow()
         {
             InitializeComponent();
-            lvUsers.ItemsSource = new List<User>()
-            {
-                new User(0,"hhh","lll",string.Empty,"hlglnz","16122002","hlg@"),
-                new User(1,"awdq","asd","aaa","35r3sef","16122002","hqa3r@"),
-                new User(2,"Симасесечка","Будябка","Финтифлюш","йцук","фывцф","124цук")
-            };
+            lvUsers.ItemsSource = UserParser.Parse("users3.txt");
         }
     }
 }

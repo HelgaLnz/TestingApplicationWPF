@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 E:\Projects\C#\ProjectWPF\ProjectWPF\App.xaml
-2-1397326509
+4614601658
 
-81925042796
+111474527526
 194-200944676
-View\AuthorizationWindow.xaml;View\UsersWindow.xaml;
+View\AuthorizationWindow.xaml;View\ClientWindow.xaml;View\ManagerWindow.xaml;View\UsersWindow.xaml;
 
 True
 

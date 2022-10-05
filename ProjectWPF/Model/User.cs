@@ -13,9 +13,11 @@ namespace ProjectWPF.Model
         public string Firstname { get; set; }
         public string Middlename { get; set; }
         public string Lastname { get; set; }
+        public DateTime BornDate { get; set; }
+        public decimal Salary { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public string Email { get; set; }
+        public string Role { get; set; }
 
         public User()
         {
@@ -23,20 +25,25 @@ namespace ProjectWPF.Model
             Firstname = string.Empty;
             Middlename = string.Empty;
             Lastname = string.Empty;
+            BornDate = DateTime.UnixEpoch;
+            Salary = decimal.Zero;
             Login = string.Empty;
             Password = string.Empty;
-            Email = string.Empty;
+            Role = string.Empty;
         }
 
-        public User(int id, string firstname, string middlename, string lastname, string login, string password, string email)
+        public User(int id, string firstname, string middlename, string lastname,
+            DateTime bornDate, decimal salary, string login, string password, string role)
         {
             Id = id;
             Firstname = firstname;
             Middlename = middlename;
             Lastname = lastname;
+            BornDate = bornDate;
+            Salary = salary;
             Login = login;
             Password = password;
-            Email = email;
+            Role = role;
         }
     }
 }
