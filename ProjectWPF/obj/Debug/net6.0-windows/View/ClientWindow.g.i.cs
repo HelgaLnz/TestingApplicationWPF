@@ -53,7 +53,7 @@ namespace ProjectWPF.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ProjectWPF;component/view/clientwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ProjectWPF;V1.0.0.0;component/view/clientwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\ClientWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
